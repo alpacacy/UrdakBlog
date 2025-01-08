@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urdak Blog - Galería</title>
+	<link rel="stylesheet" href="styleother.css">
+</head>
+
+<body style="background-image: url(images/theholt3.png); background-size: cover;">
+	<header id="main-header">
+		<a id="logo-header" href="index.html">
+			<span class="site-name">Urdak Blog</span>
+			<span class="site-desc">Todo acerca de DOOM</span>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+				<li><a href="articulos.html">Articulos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section style="padding-top: 25px;">
+		<h1><span class="title" style="color: #73d1d1;">Galeria de imagenes</span></h1>
+		<div class="gallery" style="padding-top: 10px;">
+			<img id="main-image" class="main-image" src="images/archvilee3.jpg" alt="Imagen Principal">
+			<p id="caption" class="caption">Estatua a escala de un Arch-Vile en la E3 2018.</p>
+			<br>
+			<div class="thumbnails">
+				<img src="images/archvilee3.jpg" alt="Arch-Vile en la E3" class="thumbnail active" onclick="changeImage(this, 'Estatua a escala de un Arch-Vile en la E3 2018.')">
+				<img src="images/motherdemon.png" alt="Unmaker y Madre Demonio" class="thumbnail" onclick="changeImage(this, 'La Unmaker contra la Madre Demonio, jefe final de DOOM 64.')">
+				<img src="images/idsoftware.png" alt="Equipo de ID Software" class="thumbnail" onclick="changeImage(this, 'Equipo de ID Software con una estatua de Arch-Vile.')">
+				<img src="images/vegacentralprocessing.jpg" alt="VEGA en DOOM 2016" class="thumbnail" onclick="changeImage(this, 'Unidad de Procesamiento Central de VEGA, DOOM (2016).')">
+				<img src="images/mancubusmodel.png" alt="Modelo de Mancubus" class="thumbnail" onclick="changeImage(this, 'Modelo original de un Mancubus para DOOM (1993).')">
+				<img src="images/nopal.jpg" alt="DOOM... ¿en un nopal?" class="thumbnail" onclick="changeImage(this, 'DOOM... Corriendo en un nopal?')">
+				<img src="images/tyrant.png" alt="Tirano en DOOM Eternal" class="thumbnail" onclick="changeImage(this, 'Primera aparicion del Tirano y la BFG-9000 en DOOM Eternal')">
+				<img src="images/originaldoom.png" alt="Arte original de DOOM" class="thumbnail" onclick="changeImage(this, 'Arte original para la portada de DOOM (1993).')">
+				<img src="images/doom3vs.jpg" alt="Graficos de DOOM 3" class="thumbnail" onclick="changeImage(this, 'Vistazo a los graficos de DOOM 3.')">
+				<img src="images/maykrconceptart.jpg" alt="Conceptos de Maykr" class="thumbnail" onclick="changeImage(this, 'Arte conceptual para los Maykr, DOOM Eternal.')">
+				<img src="images/cutdoom64.png" alt="Portada de DOOM 64" class="thumbnail" onclick="changeImage(this, 'Portada original (rechazada) para DOOM 64.')">
+			</div>
+		</div>
+		<br><br>
+	</section>
+
+	<footer id="main-footer">
+		<p>2025 Urdak Blog. Realizado por Castro Aguilar Eder Joel.</p>
+	</footer>
+	
+	<span id="cursor-personalizado" class="click-animado"></span>
+	<script type="text/javascript" src="cursor.js"></script>
+	<script type="text/javascript" src="galeria.js"></script>
+</body>
+</html>

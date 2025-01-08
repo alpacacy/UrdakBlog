@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'DoomFont';
+    src: url('DooM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	cursor: none;
+}
+
+a{
+	cursor: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    padding-top: 60px;
+	background-size: 100%;
+	box-shadow: 0 30px 30px rgba(0,0,0,.1);
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-family: 'DoomFont', sans-serif;
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#main-header {
+	background-image: url("images/texture01.png");
+	color: rgb(255, 255, 255);
+	height: 80px;
+	z-index: 100;
+	width: 100%;
+	left: 0; 
+	top: 0; 
+	position: fixed;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+	font-family: 'DoomFont', sans-serif;
+}
+	#main-header a {
+		color: #e39e15;
+	}
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #d52a2a;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #d9c6a1;
+	}
+	
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #1f1e33;
+				}
+
+#main-footer {
+	background-image: url(images/texture01.png);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	z-index: 100;
+}
+
+	#main-footer p {
+		margin: 0;
+	}
+		
+	#main-footer a {
+		color: white;
+	}
+
+#cursor-personalizado {
+	width: 50px;
+	height: 50px;
+	background-image: url(images/cursor.png);
+	background-position: center;
+	background-size: 190%;
+	position: absolute;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	filter: brightness(10);
+}
+
+.click-animado {
+	animation: clickEffect 0.3s ease-out;
+}
+	  
+@keyframes clickEffect {
+	0% {
+		transform: translate(-50%, -50%) scale(1.5);
+		opacity: 0.7;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}
+
+	#banner h1 {
+		color: white;
+		background-color: #1f1e33;
+		padding: 10px;
+		font-family: 'DoomFont', sans-serif;
+	}
+
+#article {
+	margin: 3%;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #1f1e33;
+}
+
+h2 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	color: snow;
+}
+
+.subtitulo {
+	background-color: rgb(149, 196, 237);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1 .title{
+	padding: 10px;
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+}
+
+	.main-image {
+		width: auto;
+		height: 360px;
+		border: 2px solid #ccc;
+		border-radius: 8px;
+		margin-bottom: 20px;
+		object-fit: contain;
+	}
+
+	.caption {
+		font-family: 'DoomFont', sans-serif;
+		font-size: 18px;
+		color: #d5f8ff;
+		margin-bottom: 20px;
+		text-align: center;
+		background-color: #272645;
+		padding: 10px;
+		border-radius: 10px;
+		border: 1px solid #ccc;
+	}
+
+	.thumbnails {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.thumbnails img {
+		width: 100px;
+		height: 70px;
+		border: 2px solid transparent;
+		border-radius: 4px;
+		cursor: none;
+		object-fit: cover;
+		transition: border-color 0.3s;
+	}
+
+	.thumbnails img:hover {
+		border-color: #007BFF;
+		filter: brightness(1.1);
+	}
+
+	.thumbnails img.active {
+		border-color: #007BFF;
+		filter: brightness(1.1);
+	}
+
+	#article {
+	margin: 3%;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #1f1e33;
+}
+
+h2 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	color: snow;
+}
+
+.subtitulo {
+	background-color: rgb(149, 196, 237);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+.blocks {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  	gap: 20px; 
+}
+
+.block {
+  	border: 1px solid #ccc;
+  	border-radius: 10px;
+  	padding: 15px;
+  	background-color: #272645;
+  	text-align: center;
+  	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	grid-template-rows: auto;
+	gap: 20px;
+}
+
+.block img {
+  	width: 500px;
+	object-fit: cover;
+  	border-radius: 10px 10px 0 0; 
+	margin-bottom: 10px;
+}
+
+.block h3 {
+	font-family: 'Times New Roman', Times, serif;
+  	font-size: 1.5rem;
+ 	margin: 10px 0;
+}
+
+h1 .title{
+	padding: 10px;
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+#article {
+	margin: 3%;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #1f1e33;
+}
+
+h2 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	color: snow;
+}
+
+.subtitulo {
+	background-color: rgb(149, 196, 237);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+.blocks {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  	gap: 20px; 
+}
+
+.block h3 {
+	font-family: 'Times New Roman', Times, serif;
+  	font-size: 1.5rem;
+ 	margin: 10px 0;
+}
+
+p {
+  	padding-top: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  	font-size: 1rem;
+  	margin: 10px 0;
+}
+
+h1 .title{
+	padding: 10px;
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.block {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+    border: 2px solid #272645; 
+    max-width: 390px;
+    margin: auto; 
+	border: 1px solid #ccc;
+}
+
+.block img {
+    flex-shrink: 0; 
+    width: 150px; 
+    height: 200px;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+}
+
+.block .content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+}
+
+.block .content h3 {
+    margin: 0; 
+    font-size: 20px; 
+    color: #24c400;
+	font-family: 'DoomFont', sans-serif;
+}
+
+.block .content p {
+    margin: 10px 0 0; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #b9ffa5; 
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#inter{
+	height: 50px;
+	background-size: 25%;
+	background-image: url(images/texture02.png);
+}
+
+form {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+	color: rgb(255, 120, 120);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	float: left;
+	font-size: 0.9em;
+}
+
+input, textarea {
+	background-color: #d8d6f6;
+	width: 290px;
+	float: right;
+}
+
+textarea {
+	height: 75px;
+}
+
+input {
+	height: 25px;
+}
+
+button {
+	background-color: #eae6ff;
+}
+
+input:hover, textarea:hover, label:hover, button:hover {
+	cursor: none;
+}
+
+.blocks-contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;     
+	gap: 20px;              
+	padding: 20px;
+  }
+
+.block-contact {
+    border: 1px solid #ccc;	
+  	border-radius: 10px;
+  	padding: 15px;
+  	background-color: #272645;
+  	text-align: center;
+  	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	gap: 20px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	max-width: 700px;
+	max-height: 350px;
+}
+
+.block-contact h3{
+	margin: 0; 
+    font-size: 20px; 
+    color: #ea3a3a;
+	font-family: 'DoomFont', sans-serif;
+}
+
+.comment {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #dcecff;
+}
+
+.comment img {
+	height: 75px;
+	width: auto;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+
+.comment-content {
+	flex: 1;
+}
+
+.comment-name {
+	font-family: 'DoomFont', sans-serif;
+	font-weight: bold;
+	color: #1f1e33;
+}
+
+.comment-text {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	color: #272645;
+}
+
+#commentsContainer {
+	max-height: 250px; 
+	width: 450px;
+	overflow-y: auto;
+	padding-right: 10px; 
+}

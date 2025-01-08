@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'DoomFont';
+    src: url('DooM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	cursor: none;
+}
+
+a{
+	cursor: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    padding-top: 60px;
+	background-image: url(images/urdak.png);
+	background-position: center;
+	background-size: auto;
+	box-shadow: 0 30px 30px rgba(0,0,0,.1);
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-family: 'DoomFont', sans-serif;
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+h1 .intro{
+	padding: 10px;
+	color: rgb(232, 146, 85);
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+h1 .recents{
+	padding: 10px;
+	color: #57a1d2;
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+h1 .links{
+	padding: 10px;
+	color: #58df7e;
+	background-color: #1f1e33;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+#inter{
+	height: 50px;
+	background-size: 25%;
+	background-image: url(images/texture02.png);
+}
+
+p {
+	margin: 0 0 1.5em 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#main-header {
+	background-image: url("images/texture01.png");
+	color: rgb(255, 255, 255);
+	height: 80px;
+	z-index: 100;
+	width: 100%;
+	left: 0; 
+	top: 0; 
+	position: fixed;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+	font-family: 'DoomFont', sans-serif;
+}
+	#main-header a {
+		color: #e39e15;
+	}
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #d52a2a;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #d9c6a1;
+	}
+	
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #1f1e33;
+				}
+
+#main-content {
+	padding-top: 50px;
+	background-image: url(images/doom2016wp.jpg);
+	background-position: center;
+	background-size: 100%;
+	height: 650px;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+	#main-content h1{
+		padding-top: 280px;
+	}
+
+	#main-content img:hover{
+		filter: invert();
+	}
+
+#main-footer {
+	background-image: url(images/texture01.png);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	z-index: 100;
+}
+
+	#main-footer p {
+		margin: 0;
+	}
+		
+	#main-footer a {
+		color: white;
+	}
+
+#articles {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+	.article-container {
+		display: flex; 
+		justify-content: space-between; 
+		padding: 40px;
+		flex-wrap: wrap; 
+	  }
+	  
+	  .article-block {
+		max-width: 500px;
+		height: auto;
+		background-image: url(images/texture03.jpg); 
+		background-position: center;
+		background-size: cover;
+		border: 3px solid #00242b;
+		border-radius: 10px; 
+		padding: 15px;
+		text-align: center;
+		text-decoration: none; 
+		color: #1f1e33; 
+		transition: transform 0.3s, box-shadow 0.3s; 
+	  }
+	  
+	  .article-block h2 {
+		font-family: 'DoomFont', sans-serif;
+		font-size: 20px;
+		color: #ffffff;
+		background-color: #1f1e33;
+		padding: 10px;
+		border-radius: 15px;
+		border: 1px solid #ccc;
+	  }
+
+	  .article-block img {
+		max-width: 500px;
+		max-height: 170px;
+		border-radius: 10px;
+		padding: 5px;
+	  }
+	  
+	  .article-block p {
+		font-size: 15px;
+		font-weight: bold;
+		color: rgb(215, 235, 237);;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		background-color: #272645;
+		padding: 10px;
+		border-radius: 10px;
+		border: 1px solid #ccc;
+	  }
+	  
+	  .article-block:hover {
+		transform: scale(1.025);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+		border-color: #56ef47; 
+	  }
+
+#follow	{
+	padding-top: 50px;
+	background-image: url(images/theholt7.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 333px;
+	box-shadow: 0 10px 10px rgba(0,0,0,.1);
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+	.image-container {
+		padding-top: 50px;
+		display: flex;
+		gap: 90px;
+		justify-content: center; 
+	}
+	
+	.image-container img {
+		width: 90px; 
+		height: auto; 
+	}
+
+	.image-container img:hover {
+		filter: brightness(0.66);
+	}
+
+#cursor-personalizado {
+	width: 50px;
+	height: 50px;
+	background-image: url(images/cursor.png);
+	background-position: center;
+	background-size: 190%;
+	position: absolute;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	filter: brightness(10);
+}
+
+.click-animado {
+	animation: clickEffect 0.3s ease-out; 
+}
+	  
+@keyframes clickEffect {
+	0% {
+		transform: translate(-50%, -50%) scale(1.5);
+		opacity: 0.7;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urdak Blog - Contacto</title>
+	<link rel="stylesheet" href="styleother.css">
+</head>
+
+<body style="background-image: url(images/theholt6.jpg); background-size: cover;">
+	<header id="main-header">
+		<a id="logo-header" href="index.html">
+			<span class="site-name">Urdak Blog</span>
+			<span class="site-desc">Todo acerca de DOOM</span>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+				<li><a href="articulos.html">Articulos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section style="padding-top: 25px;">
+		<h1><span class="title" style="color: #da2223;">Contacto</span></h1>
+
+		<section class="blocks-contact">
+			<div class="block-contact">
+				<h3>Envianos un comentario</h3>
+				<form id="commentForm">
+					<label for="name">Nombre:</label>
+					<input type="text" name="name" id="name" required><br>
+					
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" required><br>
+					
+					<label for="comment">Comentario:</label>
+					<textarea name="comment" id="comment" style="resize: none;" required></textarea><br>
+					
+					<button type="submit">Send</button>
+				</form>
+			</div>
+			<div class="block-contact" style="width: 300px;">
+				<div id="responseMessage" style="color: rgb(0, 183, 0)">El cacodemonio espera tu mensaje...</div>
+				<img id="statusImage" src="images/caco.gif" alt="Cacodemon!">
+			</div>
+			<div class="block-contact" style="width: 500px;">
+				<h3>Comentarios mas recientes:</h3>
+				<div id="commentsSection">
+					<div id="commentsContainer"></div>
+				</div>
+			</div>
+		</section>
+		</div>
+	</section>
+
+	<div style="padding-top: 400px;">
+		<img src="images/pekora.gif" alt="¡Me encontraste!" style="display: flex; width: 50px;">
+	</div>
+	<footer id="main-footer" style="padding-top: 20px;">
+		<p>2025 Urdak Blog. Realizado por Castro Aguilar Eder Joel.</p>
+	</footer>
+
+	<span id="cursor-personalizado" class="click-animado"></span>
+	<script type="text/javascript" src="cursor.js"></script>
+	<script type="text/javascript" src="comment.js"></script>
+</body>
+</html>
